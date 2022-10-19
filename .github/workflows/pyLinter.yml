@@ -16,6 +16,7 @@ jobs:
     - run: echo "The name of the branch is ${{ GITHUB.REF }} in repo. ${{ GITHUB.REPOSITORY }}"
     - name: check-out the code
       uses: actions/checkout@v2
+    - name: debug repository name
       run: echo "The ${{ GITHUB.REPOSITORY }} has been cloned to the runner"
     - name: set up python
       uses: action/setup-python@v2
