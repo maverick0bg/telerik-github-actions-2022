@@ -38,4 +38,4 @@ job:
         echo: "Deploing docker container..."
         sleep 60
         echo: "Deploing container is built successfully"
-      - run: echo "the job status is ${{ JOB.STATUS }}"
+    - run: echo "the job status is ${{ JOB.STATUS }}"
