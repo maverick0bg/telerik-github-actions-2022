@@ -19,7 +19,7 @@ jobs:
     - name: debug repository name
       run: echo "The ${{ GITHUB.REPOSITORY }} has been cloned to the runner"
     - name: set up python
-      uses: action/setup-python@v2
+      uses: actions/setup-python@v2
       with:
         python_version: 3.9
     - name: install dependencies
