@@ -3,11 +3,22 @@ name: Lint
 on:
   push:
     branches: [ feature2 ]
-    paths:
-      - 'factorial.py'
-      - 'lint_test.py'
+#    paths:
+#      - 'factorial.py'
+#      - 'lint_test.py'
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.9-alpine
+      options: --cpus 1
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: integration test
+        run: python factorial.py
+    
   lint:
     runs-on: ubuntu-latest
     steps:
