@@ -31,7 +31,8 @@ jobs:
         python lint_test.py
     - name: build container
       run: |
-        echo: "building docker container..."
+        echo: |
+        "building docker container..."
         sleep 60
         echo: "The docker container is built successfully"
     - name: Deploy
