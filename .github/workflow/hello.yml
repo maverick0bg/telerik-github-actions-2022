@@ -1,0 +1,12 @@
+name: learn github actions
+on: [push]
+jobs:
+  build:
+    runns-on: ubuntu-latest
+    steps:
+      -uses: actions/checkout@v2
+      -run: echo "this job was automatically triggered by a ${{ GITHUB.EVENT_NAME }}"
+      -run: pwd
+      -run: ls -la
+      -run: ls -la /
+      
