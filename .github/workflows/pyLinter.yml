@@ -6,8 +6,8 @@ on:
     paths:
       - 'factorial.py'
       - 'lint.py'
-      
-job:
+
+jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
