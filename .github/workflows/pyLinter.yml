@@ -31,13 +31,12 @@ jobs:
         python lint_test.py
     - name: build container
       run: |
-        echo: |
-        "building docker container..."
+        echo "building docker container..."
         sleep 60
-        echo: "The docker container is built successfully"
+        echo "The docker container is built successfully"
     - name: Deploy
       run: |
-        echo: "Deploing docker container..."
+        echo "Deploing docker container..."
         sleep 60
-        echo: "Deploing container is built successfully"
+        echo "Deploing container is built successfully"
     - run: echo "the job status is ${{ JOB.STATUS }}"
